@@ -1,0 +1,335 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Muli', sans-serif;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+body{
+  margin: 0px;
+}
+.border{
+  border: 2px solid black;
+}
+/*header*/
+header{
+  clear: both;
+  height: 600px;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+  background-repeat: no-repeat;
+  background-size: 1153px;
+  background-position: center;
+  background-size: cover;
+}
+header > nav{
+  margin: 0 auto;
+}
+nav ul{
+  margin-top: 0;
+}
+header nav ul > li {
+  display: inline-block;
+  margin-left: 50px;
+  font-size: 19px;
+  margin-top: 35px;
+}
+header nav ul li > a{
+  color: white;
+  text-decoration: none;
+}
+header section span {
+  color: white;
+  margin-left: 274px;
+}
+header button{
+  border-radius: 10px;
+  color: white;
+  background-color: transparent;
+}
+header section span, button {
+  font-size: 19px;
+  margin-right: 8px;
+}
+
+.yelpLogo {
+  margin: 0 auto;
+  max-width: 500px;
+  height: 100px;
+  text-align: center;
+}
+
+.yelpLogo > img {
+  width: inherit;
+  height: inherit;
+}
+
+.lastNavItem {
+  float: right;
+  margin-right: 50px;
+}
+
+.searchNav {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.searchNav > input {
+  width: 41%;
+  margin: -5px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.beneathSearchNavContainer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.beneathSearchNav > li{
+  display: inline-block;
+  color: white;
+}
+
+.border {
+  border: 2px solid black;
+}
+.photoBy {
+  text-align: center;
+  margin-top: 279px;
+  color: white;
+  font-weight: 900;
+}
+
+/*Under header section CSS*/
+.yelpBoston{
+  text-align: center;
+}
+.yelpBoston > h2 {
+  color: red;
+  font-weight: bold;
+}
+.yelpBoston ul > li{
+  display: inline-block;
+  margin: 0 25px;
+  font-size: 19px;
+}
+.yelpBoston ul li > a{
+  color: #6f7376;
+  text-decoration: none;
+}
+
+.hotAndNewBus {
+  width: 100%;
+  padding-top: 60px;
+}
+
+.hotAndNewBus > h3{
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+.hotAndNewBus section {
+    background-image: url(http://www.hdnicewallpapers.com/Walls/Big/Food%20and%20Drinks/French_Fries_and_Meat_Burger_HD_Wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: 293px;
+    width: 25%;
+    margin-left: 72px;
+    height: 256px;
+    float: left;
+    border: 2px solid lightgrey;
+}
+.hotAndNewBus section:nth-last-of-type(2) {
+    background-image: url(https://saltedmint.com/wp-content/uploads/2018/11/Crock-Pot-Butter-Chicken-Square-1-of-1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 284px 66%;
+}
+.hotAndNewBus .sushi {
+    background-image: url(http://3d4brw1g2wdy3ek6ql1k0q07.wpengine.netdna-cdn.com/wp-content/uploads//ban_authentic.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 284px 66%;
+}
+h4 {
+  margin-top: 168px%;
+  margin-top: 158px;
+  padding: 14px;
+}
+.hotAndNewBus section > .fas {
+  font-weight: 900;
+  color: gold;
+}
+/*browse Bus By Category css*/
+.browseBusByCategory > h4{
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+.browseBusByCategory{
+  background-color: #f3f3f3;
+  min-width: 800px;
+}
+.restUrant .fa-utensils:before {
+  content: "\f2e7";
+  color: #768a9b;
+  font-size: 36px;
+}
+.fa-shopping-bag:before {
+  content: "\f290";
+  color: #c88b6d;
+  font-size: 36px;
+}
+.martini .fa-glass-martini:before {
+  content: "\f000";
+  color: #db4545;
+  font-size: 36px;
+}
+i.fas.fa-futbol {
+  font-size: 36px;
+  color: #092d4b;
+}
+.browseBusByCategory section {
+  width: 16%;
+  height: 109px;
+  float: left;
+  text-align: center;
+  padding: 21px;
+  margin-left: 82px;
+  margin-bottom: 24px;
+  background: white;
+}
+
+/* media queries for tablets */
+@media (min-width: 768px)and (max-width: 1023px) {
+  header {
+    width: 100%;
+  }
+  .yelpBoston{
+    display: none;
+  }
+  .hotAndNewBus section {
+    background-image: url(http://www.hdnicewallpapers.com/Walls/Big/Food%20and%20Drinks/French_Fries_and_Meat_Burger_HD_Wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: 293px;
+    width: auto;
+    margin-left: 0px;
+    height: auto;
+    float: none;
+    padding: 0px;
+}
+  .hotAndNewBus .burGr{
+    display: none;
+  }
+  .hotAndNewBus {
+    width: 100%;
+  }
+  .hotAndNewBus section:nth-last-of-type(2) {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+    padding-top: 703px;
+}
+  .hotAndNewBus .sushi {
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+    padding-top: 530px;
+    margin: 0px;
+}
+  .browseBusByCategory {
+    width: 100%;
+  }
+  .browseBusByCategory section {
+    width: 35%;
+    height: 109px;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    margin-left: 82px;
+    margin-bottom: 24px;
+}
+}
+
+/* media queries for phones */
+@media only screen and (max-width: 768px){
+  header {
+      height: auto;
+  }
+  nav ul{
+    display: none;
+  }
+  .searchNav > input{
+    width: 45%;
+    margin: -2px;
+  }
+  ul.beneathSearchNav {
+    margin-left: -8%;
+}
+.hotAndNewBus {
+    padding-top: 7px;
+}
+  .yelpBoston{
+    display: none;
+  }
+  .hotAndNewBus section {
+    background-image: url(http://www.hdnicewallpapers.com/Walls/Big/Food%20and%20Drinks/French_Fries_and_Meat_Burger_HD_Wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: 82%;
+    height: auto;
+    float: left;
+    background-position: center;
+    text-align: center;
+    padding-top: 1px;
+    margin-bottom: none;
+    margin-left: 1%;
+    border: none;
+}
+.hotAndNewBus .burGr h4{
+    padding-top: 164px;
+}
+.hotAndNewBus section:nth-last-of-type(2) {
+    background-image: url(https://saltedmint.com/wp-content/uploads/2018/11/Crock-Pot-Butter-Chicken-Square-1-of-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 82%;
+    float: left;
+    background-position: none;
+    text-align: center;
+    padding-top: 531px;
+    margin-left: 1%;
+}
+.hotAndNewBus section:nth-last-of-type(2) h4{
+  padding-top: 142px;
+}
+.hotAndNewBus .sushi {
+    background-repeat: no-repeat;
+    background-size: 82%;
+    height: auto;
+    float: left;
+    background-position: center;
+    text-align: center;
+    padding-top: 500px;
+    margin-bottom: 57px;
+    margin-left: 1%;
+}
+  .hotAndNewBus,.hotAndNewBus section{
+    width: 100%;
+    float: none;
+  }
+  h4 {
+    font-size: 2.2rem;
+    margin-bottom: 1%;
+  }
+footer{
+  display: none;
+  }
+}
